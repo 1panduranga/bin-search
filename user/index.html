@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Bin Search</title>
+	<link rel="shortcut icon" href="images/recycle_icon_tree.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Satisfy|Tajawal&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Titillium+Web:200i&display=swap" rel="stylesheet">
+	<link href="bin.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="top_nav">
+		<ul>
+
+			<li id="about_button">about</li>
+			<li id="bookings_button">bookings</li>
+			<li id="login_button">log-in</li>
+			<li id="logo"> <a href="index.html">Bin Search</a></li>
+
+		</ul>
+	</div>
+	<div id="home_page">
+		<div id="message_box">
+			<p class="form_heading">Message from SAM,the truck driver</p>
+			<p id="run_text">WOAH !! It's great to think about puting that in a dustbin.
+				Nice job.<br>Now use the search bar below to know which bin it goes in to.</p>
+			<input type="text" placeholder="Ask me about any product" id="search_bar" spellcheck=false>
+			<button id="search_button">search</button></p>
+			<button id="scroll_button">lets go</button></p>
+		</div>
+
+		<div class="city_pic">
+			<img src="images/city_drawing.svg" alt="city">
+		</div>
+
+		<div class="truck_pic">
+			<img src="images/truck_pic.svg" alt="trash_truck">
+		</div>
+		<div id="top_img"><img src="images/top.svg" alt="go to start button"></div>
+
+	</div>
+	<div id="err_msg">
+		<img src="images/err_msg.svg" alt="error msg box">
+		<p id="msg">Error in loading the warning.</p>
+	</div>
+	<div id="sucess_msg">
+		<img src="images/sucess.svg" alt="sucess msg box">
+		<p id="smsg">Error in loading the sucess msg.</p>
+	</div>
+	<div id="driver_pic">
+		<img src="images/driver.svg" alt="truck driver">
+	</div>
+
+
+	<div id="about_page">
+		<div id="tot_para">
+			<div id="para_1">
+				<p>Hey i'm Sam ,driver of a truck which collects the trash.This job is given to me by my friends whose aim is to make surroundings clean & green  by recycling and helping people to participate in recycling.</p>
+				<img class=photo src="images/pandu.jpeg"><span class="name">- Pandu ranga</span>
+				<img class=photo src="images/pavan.png"><span class="name">- Pavan sai Kalyan</span>
+			</div>
+			<div id="para_2">
+				<p>As I have some years of experience handling the trash, you can ask me details about any product through the search box available in home 
+					page.I can give you it's bin,recycling and decomposition details.  </p>
+			</div>
+			<div id="para_3">
+				<p>You can book a slot any time in our bookings page, if you have trash that can't fit in a regular trash collecting bin.
+				Otherwise if you have an organization and want us to regularly take your trash for recycling, hit regular clean up in same bookings page
+			 fill the details required.</p>
+			</div>
+			<div id="para_4">
+				<p>If you want to create an account hit the login button and fill in the details.If you already had an account,  login by entering your deatils </p>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="login_page">
+		<form id="signup_form">
+			<p class="form_heading">Sign up to create a <span style="font-size:1.1em;"> Bin Search </span> account</p>
+			<input type="text" placeholder="First name" style="width:39%;" name="fname" spellcheck=false>
+			<input type="text" placeholder="Last name" style="width:39%;" name="lname" spellcheck=false><br>
+			<input type="text" placeholder="Enter your email" name="email" spellcheck=false><br>
+			<input type="tel" placeholder="Enter your phone number" name="phno" spellcheck=false><br>
+			<input type="password" placeholder="Type a password" name="password" spellcheck=false><br>
+			<input type="password" placeholder="Re-type the password " name="repassword" spellcheck=false><br>
+			<input type="submit" value="sign up">
+			<div id="already_sign">already had an account? <span style="color:tomato;">log in</span></div>
+		</form>
+
+		<form id="login_form">
+			<p class="form_heading">Log in to your <span style="font-size:1.1em;"> Bin Search </span> account</p>
+			<input type="text" placeholder="Enter your email" name="lemail" spellcheck=false><br>
+			<input type="password" placeholder="Enter the password" name="lpassword" spellcheck=false><br>
+			<input type="submit" value="login">
+			<div id="already_log">Didn't have an account? <span style="color:tomato;">sign up</span></div>
+		</form>
+	</div>
+
+	<div id="bookings_page">
+
+		<form id="organization">
+			<p class="form_heading">Enter your organization details</p>
+			<input type="text" placeholder="Enter organization's name" spellcheck=false name="oname"><br>
+			<input type="text" placeholder="Enter email" spellcheck=false name=oemail><br>
+			<input type="tel" placeholder="Enter mobile number" spellcheck=false name="ophno"><br>
+			<input type="text" placeholder="Enter complete address" spellcheck=false name="oaddress"><br>
+			<input type="text" placeholder="Enter pin-code" spellcheck=false name="opincode">
+			<input type="submit" value="register" id="org_button">
+			<div id="not_org">one time clean up? <span style="color:tomato;">click here</span></div>
+		</form>
+
+		<form id="house">
+			<p class="form_heading">Fill the details for one time Clean up</p>
+			<select id="type_of_trash" name="type_of_trash" class="font">
+				<option value="" selected style="font-weight:bolder;">Select the type of trash</option>
+				<option value="paint buckets">Paint buckets</option>
+				<option value="wooden logs">Wooden logs</option>
+				<option value="constuction materials">Construction materials</option>
+				<option value="mud and sand">Mud or sand</option>
+				<option value="house shift">House shift left overs</option>
+				<option value="marriage leftovers">Marriage left overs (not food)</option>
+				<option value="other">other</option>
+			</select>
+			<select id="amount_of_trash" name="amount_of_trash" class="font">
+				<option value="" selected style="font-weight:bolder;">Approximate weight of trash</option>
+				<option value="5">Very heavy</option>
+				<option value="4">Heavy</option>
+				<option value="3">Medium</option>
+				<option value="2">less than medium</option>
+				<option value="1">less </option>
+			</select>
+			<input type="tel" placeholder="Enter your phone number" name="hphno" spellcheck=false><br>
+			<input type="text" placeholder="Enter complete address" spellcheck=false name="haddress"><br>
+			<input type="text" placeholder="Enter pin-code" spellcheck=false name="hpincode">
+			<input type="submit" value="submit" id="house_button">
+			<div id="not_house">Regular clean up for an organization? <span style="color:tomato;">click here</span>
+			</div>
+		</form>
+	</div>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC2-OxqvpstjQayb4EuhTjsTbR53XMkER0",
+    authDomain: "bin-search-62c8f.firebaseapp.com",
+    databaseURL: "https://bin-search-62c8f.firebaseio.com",
+    projectId: "bin-search-62c8f",
+    storageBucket: "bin-search-62c8f.appspot.com",
+    messagingSenderId: "953644569909",
+    appId: "1:953644569909:web:72e14dd828d3d3c934e87c",
+    measurementId: "G-XF0TSTBQHR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+const db=firebase.firestore();
+</script>
+	<script src="bin.js"></script>
+</body>
+
+</html>

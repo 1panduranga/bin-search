@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bookings data</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato|Satisfy|Tajawal&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Titillium+Web:200i&display=swap" rel="stylesheet">
+    <link href="office.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top_nav">
+    <div id="logo">Bin Search</div>
+		<ul id="navb">
+      <li id="login_button">about</li>
+		</ul>
+  </div>
+
+
+  <div class="home_wrapper"> 
+    <div class="title center"><h4>one time cleanup</h4></div>
+    <div class="content "><ul class="home" style="list-style-type: none; margin:0px 10px 0px -30px;"></ul></div>
+  </div>
+ 
+  <div class="org_wrapper"> 
+    <div class="title center"><h4>Regular cleanup</h4></div>
+    <div class="content "><ul class="org" style="list-style-type: none; margin:0px 10px 0px -30px;"></ul></div>
+  </div>
+    	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC2-OxqvpstjQayb4EuhTjsTbR53XMkER0",
+    authDomain: "bin-search-62c8f.firebaseapp.com",
+    databaseURL: "https://bin-search-62c8f.firebaseio.com",
+    projectId: "bin-search-62c8f",
+    storageBucket: "bin-search-62c8f.appspot.com",
+    messagingSenderId: "953644569909",
+    appId: "1:953644569909:web:72e14dd828d3d3c934e87c",
+    measurementId: "G-XF0TSTBQHR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+const db=firebase.firestore();
+</script>
+
+    <script src="office.js"> </script>
+</body>
+</html>
