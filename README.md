@@ -63,5 +63,4 @@ Using this page the officers or workers can manage the bookings and delete the c
 <br />
 
 ### 5. About page
-<br/>
 ![](screen%20shots/about.png)
