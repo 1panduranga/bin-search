@@ -50,10 +50,10 @@ Includes two switchable forms to give details regarding the trash if it is one t
 <br />
 
 ### 4. Office page
-<br />
-<br />
-Using this page the officers or workers can manage the bookings and delete the completed bookings.
 
+Using this page the officers or workers can manage the bookings and delete the completed bookings.
+<br />
+<br />
 ![](screen%20shots/office.gif)
 
 
@@ -63,4 +63,5 @@ Using this page the officers or workers can manage the bookings and delete the c
 <br />
 
 ### 5. About page
+<br/>
 ![](screen%20shots/about.png)
